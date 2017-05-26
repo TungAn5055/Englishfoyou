@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txvSoLuongDaTL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:gravity="center_horizontal"
+            android:text="20/30"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:background="#313131"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ltCauHoi1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:background="#ed3939"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txtch1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="0.58"
+            android:autoText="false"
+            android:fontFamily="@string/app_name"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Chọn câu mà bạn nghe được : "
+            android:textColor="@android:color/black"
+            android:textSize="21sp" />
+
+        <ImageView
+            android:id="@+id/imagevie1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/txtch1"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/listen"
+            app:srcCompat="@drawable/listen" />
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnCheck"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/imagevie1"
+            android:paddingTop="20dp">
+
+            <RadioButton
+                android:id="@+id/radio11"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_above="@+id/radio12"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="21dp"
+                android:background="@drawable/rounded0"
+                android:paddingLeft="18dp"
+                android:text="How are your?"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/radio12"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_above="@+id/radio13"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/rounded0"
+                android:paddingLeft="18dp"
+                android:text="What your name?"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/radio13"
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:layout_above="@+id/radio14"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="19dp"
+                android:background="@drawable/rounded0"
+                android:paddingLeft="18dp"
+                android:text="Do you have any hot food"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/radio14"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_above="@+id/btnCheck"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="60dp"
+                android:background="@drawable/rounded0"
+                android:paddingLeft="18dp"
+                android:text="Thanks for coming"
+                android:textSize="20dp" />
+
+
+        </RadioGroup>
+
+
+        <Button
+            android:id="@+id/btnCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="37dp"
+            android:background="@drawable/bg_btn"
+            android:padding="10dp"
+            android:text="Kiểm Tra"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ltCauHoi2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#cdea3f"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txtcauhoi2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="73dp"
+            android:layout_weight="0.58"
+            android:fontFamily="@string/app_name"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Câu hỏi?"
+            android:textColor="@android:color/black"
+            android:textSize="21sp" />
+
+        <EditText
+            android:id="@+id/edtCauTL2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:hint="Nhập câu trả lời"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnCheck2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="126dp"
+            android:background="@drawable/bg_btn"
+            android:padding="10dp"
+            android:text="Kiểm Tra"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ltCauHoi3"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/ltCauHoi1"
+        android:background="@color/with"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imagevie3"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_alignBottom="@+id/edtCauTL3"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="111dp"
+            app:srcCompat="@drawable/listen" />
+
+        <EditText
+            android:id="@+id/edtCauTL3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:hint="Hãy nhập từ bạn nghe được"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnCheck3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="114dp"
+            android:background="@drawable/bg_btn"
+            android:padding="10dp"
+            android:text="Kiểm Tra"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ltCauHoi4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fc4de14a"
+        android:visibility="gone">
+
+
+        <TextView
+            android:id="@+id/txtCauHoi4"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="39dp"
+            android:layout_weight="0.58"
+            android:fontFamily="@string/app_name"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Dịch câu?"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="21sp" />
+
+        <EditText
+            android:id="@+id/edtCauTL4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/txtCauHoi4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="92dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:hint="Hãy nhập từ bạn nghe được"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnCheck4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/edtCauTL4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="87dp"
+            android:background="@drawable/bg_btn"
+            android:padding="10dp"
+            android:text="Kiểm Tra"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ltCauHoi5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/ltCauHoi1"
+        android:background="#f79432"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txt5"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_weight="0.58"
+            android:autoText="false"
+            android:fontFamily="@string/app_name"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Chọn câu mà bạn nghe được : "
+            android:textColor="@android:color/background_dark"
+            android:textSize="21sp" />
+
+        <ImageView
+            android:id="@+id/imagevie5"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txt5"
+            android:layout_marginTop="37dp"
+            app:srcCompat="@drawable/listen" />
+
+        <EditText
+            android:id="@+id/edtCauTL5"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:hint="Hãy nhập từ bạn nghe được"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnCheck5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtCauTL5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="69dp"
+            android:background="@drawable/bg_btn"
+            android:padding="10dp"
+            android:text="Kiểm Tra"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/latstart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#3d6d89"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btngohome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt6"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="56dp"
+            android:background="@drawable/bg_btn"
+            android:padding="10dp"
+            android:text="Go Home"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="148dp"
+            android:gravity="center"
+            android:padding="7dp"
+            android:text="Thông báo"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

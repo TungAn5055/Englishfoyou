@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:id="@+id/linear_all"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="4dp"
+        android:background="@drawable/backgrout_ll"
+        android:orientation="horizontal"
+        >
+
+        <AutoCompleteTextView
+            android:id="@+id/edtArrWord"
+            android:layout_width="289dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_edt"
+            android:hint="Nhập từ cần tìm"
+            android:paddingLeft="5dp"
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_tron_btn"
+            android:text="Tìm"
+            android:textColor="#ffffff" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/laTim"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="173dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/backgrout_ll"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txvWord"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="40dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dịch nghĩa : "
+                        android:textColor="#000000"
+                        />
+
+                    <TextView
+                        android:id="@+id/txvMorals"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#97000000"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Từ đồng nghĩa : "
+                        android:textColor="#000000"
+                        />
+
+                    <TextView
+                        android:id="@+id/txvWordws"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#97000000"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgMusic"
+                            android:layout_width="match_parent"
+                            android:layout_height="34dp"
+                            android:padding="3dp"
+                            android:src="@drawable/speaker" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="Nghe"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textColorLink="@color/colorPrimaryDark"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/saveMusic"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:padding="3dp"
+                            android:src="@drawable/save" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:elevation="1dp"
+                            android:gravity="center_horizontal"
+                            android:text="Lưu lại"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textColorLink="@color/colorPrimaryDark"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/backgrout_ll"
+                        android:orientation="vertical"
+                        android:padding="4dp">
+
+                        <ImageView
+                            android:id="@+id/imgIllustration"
+                            android:layout_width="match_parent"
+                            android:layout_height="185dp"
+                            android:scaleType="centerCrop" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Loại từ : "
+                                android:textColor="#000000"
+                                />
+
+                            <TextView
+                                android:id="@+id/txvSpecies"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#97000000"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/backgrout_ll"
+                        android:orientation="vertical"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="Ví Dụ"
+                            android:textColor="#000000"
+                            />
+
+                        <TextView
+                            android:id="@+id/txvdt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="1dp"
+                            android:text="Danh từ"
+                            android:textColor="#97000000"
+                            />
+
+                        <TextView
+                            android:id="@+id/txvdta"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:padding="1dp"
+                            android:textColor="#000000"
+                            />
+
+                        <TextView
+                            android:id="@+id/txvdtv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:padding="1dp"
+                            android:textColor="#97000000"
+                            />
+
+                        <TextView
+                            android:id="@+id/txvddt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="1dp"
+                            android:text="Động từ"
+                            android:textColor="#97000000"
+                            />
+
+                        <TextView
+                            android:id="@+id/txvddta"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:padding="1dp"
+                            android:textColor="#000000"
+                            />
+
+                        <TextView
+                            android:id="@+id/txvddtv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:padding="1dp"
+                            android:textColor="#97000000"
+                            />
+
+                        <TextView
+                            android:id="@+id/txvtt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="1dp"
+                            android:text="Tính từ"
+                            android:textColor="#97000000"
+                            />
+
+                        <TextView
+                            android:id="@+id/txvtta"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:padding="1dp"
+                            android:textColor="#000000"
+                            />
+
+                        <TextView
+                            android:id="@+id/txvttv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:padding="1dp"
+                            android:textColor="#97000000"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </ScrollView>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

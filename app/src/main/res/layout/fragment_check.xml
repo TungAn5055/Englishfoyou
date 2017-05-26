@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/latstart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#3d6d89"
+        android:visibility="visible"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/exam"
+            android:layout_marginBottom="37dp"
+            android:layout_above="@+id/btn_word"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/btn_word"
+            android:layout_width="260dp"
+            android:layout_height="69dp"
+            android:background="@drawable/bg_btn"
+            android:text="KIểm tra từ vựng"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_alignStart="@+id/btn_sentence" />
+
+        <Button
+            android:id="@+id/btn_sentence"
+            android:layout_width="260dp"
+            android:layout_height="69dp"
+            android:background="@drawable/bg_btn"
+            android:text="Kiểm tra giao tiếp"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_marginBottom="119dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="55dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Để kiểm tra kiến thức của bạn
+         hãy đảm bảo rằng bạn đã lưu đủ 5 từ và 5 câu!"
+        android:textColor="@android:color/background_light"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

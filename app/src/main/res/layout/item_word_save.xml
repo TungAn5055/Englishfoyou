@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Button
+
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:padding="10dp"
+        android:background="@drawable/bg_tron"
+        android:id="@+id/imgMusic1" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="80dp"
+    android:layout_marginLeft="40dp"
+    android:paddingLeft="44dp"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello"
+        android:id="@+id/txvWordSave"
+        android:textColor="#000000"
+        android:padding="2dp"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dịch nghĩa : "
+            android:textColor="#97000000"
+            />
+
+        <TextView
+            android:id="@+id/txvMoralWordSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#97000000"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
+
+</RelativeLayout>

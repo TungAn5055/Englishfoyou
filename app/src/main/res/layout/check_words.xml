@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txvSoLuongDaTL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:gravity="center_horizontal"
+            android:text="20/30"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:background="#313131"/>
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/ltCauHoi1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#fc4de14a"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/edtCauTL"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/imgMusicCheck"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="58dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:hint="Hãy nhập từ bạn nghe được"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imgMusicCheck"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="93dp"
+            android:padding="4dp"
+            android:src="@drawable/loa" />
+
+        <Button
+            android:id="@+id/btnCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/imgMusicCheck"
+            android:layout_below="@+id/edtCauTL"
+            android:layout_marginTop="62dp"
+            android:background="@drawable/bg_btn"
+            android:padding="10dp"
+            android:text="Kiểm Tra"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ltCauHoi2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fbf23c28"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txvCauHoi2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="55dp"
+            android:gravity="center"
+            android:padding="7dp"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/edtCauTL2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/txvCauHoi2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="76dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:hint="Nhập câu trả lời"
+            android:textColor="#000000"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/btnCheck2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtCauTL2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="71dp"
+            android:background="@drawable/bg_btn"
+            android:padding="10dp"
+            android:text="Kiểm Tra"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ltCauHoi3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fdeaed3a"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/edtCauTL3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/imgMusicCheck3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="59dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:hint="Nhập từ liên quan đến ảnh"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imgMusicCheck3"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:layout_marginTop="36dp"
+            android:padding="4dp" />
+
+        <Button
+            android:id="@+id/btnCheck3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtCauTL3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/bg_btn"
+            android:padding="10dp"
+            android:text="Kiểm Tra"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ltCauHoi4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#33e1c1"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imgMusicCheck4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:padding="4dp"
+            android:src="@drawable/loa" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Chọn bức ảnh mà bạn nghe được"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/imgMusicCheck4"
+            android:layout_marginTop="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imgAnh1"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:layout_weight="1"
+                        android:padding="5dp" />
+
+                    <ImageView
+                        android:id="@+id/imgAnh2"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:layout_weight="1"
+                        android:padding="5dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imgAnh3"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:layout_weight="1"
+                        android:padding="5dp" />
+
+                    <ImageView
+                        android:id="@+id/imgAnh4"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:layout_weight="1"
+                        android:padding="5dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ltCauHoi5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fbf23c28"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/edtCauTL5"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/txvCauHoi5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="67dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:hint="Nhập câu trả lời"
+            android:textColor="#000000"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/txvCauHoi5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="55dp"
+            android:gravity="center"
+            android:padding="7dp"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/btnCheck5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtCauTL5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="86dp"
+            android:background="@drawable/bg_btn"
+            android:padding="10dp"
+            android:text="Kiểm Tra"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/latstart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#3d6d89"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/btngohome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt6"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="56dp"
+            android:background="@drawable/bg_btn"
+            android:padding="10dp"
+            android:text="Go Home"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="148dp"
+            android:gravity="center"
+            android:padding="7dp"
+            android:text="Thông báo"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
